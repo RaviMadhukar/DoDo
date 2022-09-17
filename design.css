@@ -21,3 +21,19 @@
     grid-template-rows:repeat(19, 1fr);
     grid-template-columns:repeat(19, 1fr);
 }
+
+.head{
+    background-color: red;
+    border-radius: 60% 90% 90% 60%;
+}
+
+.snake{
+    background-color: brown;
+    border-radius: 0 90% 90% 0;
+
+}
+
+.food{
+    background-color: blueviolet;
+    border-radius: 50%;
+}
