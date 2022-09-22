@@ -59,3 +59,48 @@
     background: linear-gradient(red,orange);
     border-radius: 50%;
 }
+
+.control i{
+    display: none;
+}
+
+@media screen and (max-width: 600px){
+    #scoreBox{
+        font-size: 30px;
+        top: 10px;
+        left: 30px;
+    }
+    #hiscoreBox{
+        font-size: 30px;
+        top: 40px;
+        left: 30px;
+    }
+    #board{
+        width: 800px;
+        height: 450px;
+        margin-bottom: 120px;
+    }
+    .control i{
+        display: block;
+        position: absolute;
+        color:transparent white;
+        font-size: 50px;
+        cursor: pointer;
+    }
+    #upp{
+        margin-top: 190px;
+        margin-left: -150px;
+    }
+    #leftt{
+        margin-top: 235px;
+        margin-left: -210px;
+    }
+    #rightt{
+        margin-top: 235px;
+        margin-left: -90px;
+    }
+    #downn{
+        margin-top: 280px;
+        margin-left: -150px;
+    }
+}

@@ -51,7 +51,7 @@ function gameEngine() {
         inputDirection = { x: 0, y: 0 } //after gameover again strat the game
         alert("Game Over.. Press any key to play again...");
         snakeArr = [{ x: 13, y: 15 }];
-        gameSound.play();
+        //gameSound.play();
         score = 0;
     }
 
@@ -149,6 +149,41 @@ window.addEventListener('keydown', e => {
             break;
         default:
             break;
-
     }
 });
+
+// mobile users
+function controler(e){
+    console.log("hello",e);
+    inputDirection = { x: 0, y: 1 } //strat the game
+    moveSound.play();
+
+    // Control using KeyBoard
+    switch (e) {
+        case "38":
+            console.log("ArrowUp");
+            inputDirection.x = 0;
+            inputDirection.y = -1;
+            break;
+
+        case "40":
+            console.log("ArrowDown");
+            inputDirection.x = 0;
+            inputDirection.y = 1;
+            break;
+
+        case "37":
+            console.log("ArrowLeft");
+            inputDirection.x = -1;
+            inputDirection.y = 0;
+            break;
+
+        case "39":
+            console.log("ArrowRight");
+            inputDirection.x = 1;
+            inputDirection.y = 0;
+            break;
+        default:
+            break;
+    }
+ }
