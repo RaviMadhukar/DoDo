@@ -49,7 +49,7 @@ function gameEngine() {
         gameOverSound.play();
         gameSound.pause();
         inputDirection = { x: 0, y: 0 } //after gameover again strat the game
-        alert("Game Over.. Press any key to play again...");
+        alert("Game Over.. Press any key to play again...",location.reload());
         snakeArr = [{ x: 13, y: 15 }];
         //gameSound.play();
         score = 0;
