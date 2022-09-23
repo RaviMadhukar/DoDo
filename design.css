@@ -88,7 +88,7 @@
         display: block;
         position: absolute;
         color: transparent white;
-        font-size: 50px;
+        font-size: 60px;
         cursor: pointer;
     }
 
@@ -110,5 +110,37 @@
     #downn {
         margin-top: 280px;
         margin-left: -150px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    #board {
+        height: 400px;
+    }
+
+    #scoreBox {
+        font-size: 20px;
+    }
+
+    #hiscoreBox {
+        font-size: 20px;
+        top: 10px;
+        left: 150px;
+    }
+
+    #upp {
+        margin-top: 150px;
+    }
+
+    #leftt {
+        margin-top: 195px;
+    }
+
+    #rightt {
+        margin-top: 195px;
+    }
+
+    #downn {
+        margin-top: 230px;
     }
 }
